@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- styles -->
+  <link rel="stylesheet" href="simple_modal.css">
+</head>
+
+<body>
+
+  <!-- buttons -->
+  <span data-simple_modal="modal1">modal1</span>
+
+  <br>
+  
+  <span data-simple_modal="modal2">modal2</span>
+  
+
+  <!-- Overlay -->
+  <div class="simpleModalOverlay"></div>
+
+
+  <!-- modals -->
+  <div class="simpleModalWindowWrap modal1">
+    <div class="simpleModalTable">
+      <div class="simpleModalCell">
+        <div class="simpleModalWindow">
+          <span class="simpleModalWindowClose"></span>
+          M1
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="simpleModalWindowWrap modal2">
+    <div class="simpleModalTable">
+      <div class="simpleModalCell">
+        <div class="simpleModalWindow">
+          <span class="simpleModalWindowClose"></span>
+          M2
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="simpleModalWindowWrap modal3">
+    <div class="simpleModalTable">
+      <div class="simpleModalCell">
+        <div class="simpleModalWindow">
+          <span class="simpleModalWindowClose"></span>
+          <div class="simpleModalWindowText"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="simple_modal.js"></script>
+
+  <script> 
+  simpleModal.init();
+
+  simpleModal.modalOpen("modal2");
+  simpleModal.modalClose("modal2");
+
+  simpleModal.modalOpen("modal3", "my text");
+  //simpleModal.modalClose("modal3");
+  </script>
+
+</body>
+</html>
