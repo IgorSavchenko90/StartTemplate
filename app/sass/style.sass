@@ -1,4 +1,5 @@
 @import "vars"
+@import "mixin"
 @import "fonts"
 @import "libs"
 
@@ -10,7 +11,7 @@
 	color: #fff
 
 body
-	font-size: 16px
+	+font-size(16px)
 	min-width: 320px
 	position: relative
 	line-height: 1.3
@@ -35,59 +36,6 @@ body
 
 .text-center
 	text-align: center
-
-.btn 
-	position: relative
-	display: inline-block
-	padding: 20px 30px
-	border: 1px solid rgba(255,255,255,0.7)
-	font-family: "SourceSansPro"
-	font-weight: 200
-	font-size: 18px
-	line-height: 1
-	color: #fff
-	text-decoration: none;
-	transition: .5s;
-	//background-color: #000;
-	box-shadow: 0 5px 20px rgba(0,0,0, .5);
-	overflow: hidden;
-	z-index: 100
-
-.btn::before 
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	//background: linear-gradient( to left,rgba(255,255,255,0.5) 0%, #010103 100%)
-	background: rgba(255,255,255,0.3);
-	z-index: -1;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform .5s ease-in-out;
-
-.btn:hover
-	color: #fff
-	&::before
-		transform: scaleX(1)
-		transform-origin: left
-
-
-.section_header
-	position: sticky
-	top: 0
-	background-color: #262835
-	padding: 10px 0
-	z-index: 2000
-.section_header__holder
-	display: flex
-	justify-content: space-between
-	align-items: center
-.section_header__logo
-		max-width: 150px
-.section_header__nav
-		
 
 .no_scroll 
 	overflow-y: hidden
@@ -169,6 +117,7 @@ select
 
 	
 /* HEADER */
+
 
 		
 /* scroll style */
